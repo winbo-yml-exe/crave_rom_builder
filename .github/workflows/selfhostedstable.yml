@@ -21,7 +21,7 @@ on:
         type: choice
         options:
           - 'ArrowOS13-'
-          - 'DerpFest13-'
+          - 'DerpFest15-'
           - 'LineageOS20-'
           - 'LineageOS21-'
           - 'CipherOS-'
@@ -35,7 +35,7 @@ on:
       LOCAL_MANIFEST:
         description: "Personal local manifest [repository or raw]:"
         required: true
-        default: 'https://github.com/xc112lg/local_manifests'
+        default: 'https://github.com/winbo-yml-exe/local_manifests'
       LOCAL_MANIFEST_BRANCH:
         description: "Personal local manifest's branch:"
         required: false
@@ -43,7 +43,7 @@ on:
       PRODUCT_NAME:
         description: "Product to build:"
         required: false
-        default: "lineage_h872"
+        default: "derp_gale"
       BUILD_TYPE:
         description: 'Type of build:'
         required: false
@@ -56,7 +56,7 @@ on:
       BUILD_COMMAND:
         description: 'Command to be used for compiling:'
         required: false
-        default: 'm bacon'
+        default: 'm gale'
       EXTRA_COMMAND :
         description: "EXTRA_COMMAND:if you need to delete or clone after reposync: rf device/lge/msm8996-common;git clone https://github.com/xc112lg/android_device_lge_msm8996-common -b evo4 device/lge/msm8996-common"
         required: false
@@ -90,7 +90,7 @@ jobs:
           BASE_PROJECT_NAME="${{ inputs.BASE_PROJECT }}"
           case $BASE_PROJECT_NAME in
             'ArrowOS13-') BASE_PROJECT_VALUE='repo init -u https://github.com/ArrowOS/android_manifest.git -b arrow-13.1 --depth=1' ;;
-            'DerpFest13-') BASE_PROJECT_VALUE='repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 13 --depth=1' ;;
+            'DerpFest15-') BASE_PROJECT_VALUE='repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 15 --depth=1' ;;
             'LineageOS20-') BASE_PROJECT_VALUE='repo init -u https://github.com/accupara/los20.git -b lineage-20.0 --git-lfs --depth=1' ;;
             'LineageOS21-') BASE_PROJECT_VALUE='repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs --depth=1' ;;
             'CipherOS-') BASE_PROJECT_VALUE='repo init -u https://github.com/CipherOS/android_manifest.git -b fourteen --git-lfs --depth=1' ;;
