@@ -2,10 +2,10 @@
 export GH_TOKEN=$(cat gh_token.txt)
 #gh auth login --with-token $GH_TOKEN
 cd /crave-devspaces
-mkdir -p DerpFest13-
+mkdir -p DerpFest15-
 rm -rf crave_rom_builder
 git clone https://$GH_TOKEN@github.com/winbo-yml-exe/crave_rom_builder.git
 cp -f crave_rom_builder/run1.sh run1.sh
 chmod +x run1.sh
-cp -f crave_rom_builder/craverun.sh DerpFest13-
+cp -f crave_rom_builder/craverun.sh DerpFest15-
 ./run1.sh

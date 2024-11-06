@@ -7,7 +7,7 @@ crave run --no-patch  -- "          #© crave.io Inc. 2017-2024
               #Thanks to UV n Team
         #no dual account just to build faster
               #respect the rule
-repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 15
+
 rm -rf .repo/local_manifests 
 git clone https://github.com/winbo-yml-exe/local_manifests -b main .repo/local_manifests
 /opt/crave/resync.sh
@@ -15,6 +15,6 @@ git clone https://github.com/winbo-yml-exe/local_manifests -b main .repo/local_m
 source build/envsetup.sh
 lunch derp_gale-userdebug
 m installclean
-brunch gale
+m gale
 "
 . pull.sh
