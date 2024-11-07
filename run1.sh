@@ -1,4 +1,4 @@
-cd DerpFest15-
-repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 15 --depth=1
+cd RisingOS-
+repo init -u https://github.com/RisingTechOSS/android -b fifteen --git-lfs --depth=1
 chmod +x craverun.sh
 . craverun.sh
