@@ -15,6 +15,6 @@ git clone https://github.com/winbo-yml-exe/local_manifests -b main .repo/local_m
 source build/envsetup.sh
 lunch rising_gale-userdebug
 m installclean
-m gale
+brunch gale
 "
 . pull.sh
