@@ -97,7 +97,7 @@ jobs:
             'LineageOS21-') BASE_PROJECT_VALUE='repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs --depth=1' ;;
             'CipherOS-') BASE_PROJECT_VALUE='repo init -u https://github.com/CipherOS/android_manifest.git -b fifteen --git-lfs --depth=1' ;;
             'RisingOS-') BASE_PROJECT_VALUE='repo init -u https://github.com/RisingTechOSS/android -b fifteen --git-lfs --depth=1' ;;
-            'AlphaDroid-') BASE_PROJECT_VALUE='repo init -u 'https://github.com/AlphaDroid-Project/manifest -b alpha-14 --git-lfs --depth=1' ;;
+            'AlphaDroid-') BASE_PROJECT_VALUE='repo init -u https://github.com/AlphaDroid-Project/manifest.git -b alpha-14 --git-lfs --depth=1' ;;
             *) BASE_PROJECT_VALUE='default-command' ;;  # Provide a default command for unknown options
           esac
           echo "BASE_PROJECT_NAME=$BASE_PROJECT_NAME" >> $GITHUB_ENV
