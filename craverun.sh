@@ -13,7 +13,7 @@ git clone https://github.com/winbo-yml-exe/local_manifests -b main .repo/local_m
 /opt/crave/resync.sh
  
 source build/envsetup.sh
-lunch cipher_gale-ap2a-userdebug
+lunch cipher_gale-ap1a-userdebug
 m installclean
 m gale
 "
