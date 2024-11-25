@@ -45,7 +45,7 @@ on:
       PRODUCT_NAME:
         description: "Product to build:"
         required: false
-        default: "alpha_gale-ap2a"
+        default: "cipher_gale-ap2a"
       BUILD_TYPE:
         description: 'Type of build:'
         required: false
@@ -95,7 +95,7 @@ jobs:
             'DerpFest15-') BASE_PROJECT_VALUE='repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 15 --depth=1' ;;
             'LineageOS20-') BASE_PROJECT_VALUE='repo init -u https://github.com/accupara/los20.git -b lineage-20.0 --git-lfs --depth=1' ;;
             'LineageOS21-') BASE_PROJECT_VALUE='repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs --depth=1' ;;
-            'CipherOS-') BASE_PROJECT_VALUE='repo init -u https://github.com/CipherOS/android_manifest.git -b fifteen --git-lfs --depth=1' ;;
+            'CipherOS-') BASE_PROJECT_VALUE='repo init -u https://github.com/CipherOS/android_manifest.git -b fourteen --git-lfs --depth=1' ;;
             'RisingOS-') BASE_PROJECT_VALUE='repo init -u https://github.com/RisingTechOSS/android -b fifteen --git-lfs --depth=1' ;;
             'AlphaDroid-') BASE_PROJECT_VALUE='repo init -u https://github.com/AlphaDroid-Project/manifest.git -b alpha-14 --git-lfs --depth=1' ;;
             *) BASE_PROJECT_VALUE='default-command' ;;  # Provide a default command for unknown options
