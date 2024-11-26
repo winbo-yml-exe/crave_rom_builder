@@ -17,7 +17,7 @@ on:
       BASE_PROJECT:
         description: 'Choose a base project:'
         required: true
-        default: 'ArrowOS13-'
+        default: 'CipherOS-'
         type: choice
         options:
           - 'ArrowOS13-'
@@ -45,7 +45,7 @@ on:
       PRODUCT_NAME:
         description: "Product to build:"
         required: false
-        default: "cipher_gale-ap2a"
+        default: "cipher_gale-ap1a"
       BUILD_TYPE:
         description: 'Type of build:'
         required: false
@@ -58,7 +58,7 @@ on:
       BUILD_COMMAND:
         description: 'Command to be used for compiling:'
         required: false
-        default: 'm gale'
+        default: 'brunch gale'
       EXTRA_COMMAND :
         description: "EXTRA_COMMAND:if you need to delete or clone after reposync: rf device/lge/msm8996-common;git clone https://github.com/xc112lg/android_device_lge_msm8996-common -b evo4 device/lge/msm8996-common"
         required: false
